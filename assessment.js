@@ -16,7 +16,7 @@ assessmentButton.onclick = () => {
 
   // headerDivision の作成
   const headerDivision = document.createElement('div');
-  headerDivision.setAttribute('class', 'card-header');
+  headerDivision.setAttribute('class', 'card-header text-bg-primary');
   headerDivision.innerText = '診断結果';
 
   // bodyDivision の作成
@@ -31,12 +31,11 @@ assessmentButton.onclick = () => {
 
   // resultDivision に Bootstrap のスタイルを適用する
   resultDivision.setAttribute('class', 'card');
-  resultDivision.setAttribute('style', 'max-width: 700px;')
 
   // headerDivision と bodyDivision を resultDivision に差し込む
   resultDivision.appendChild(headerDivision);
   resultDivision.appendChild(bodyDivision);
-  
+
   // ツイートエリアの作成
   tweetDivision.innerText = '';
   const anchor = document.createElement('a');
